@@ -8,9 +8,10 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://frontend-deployment-iota.vercel.app",
+      "https://frontend-delta-lilac-48.vercel.app",
       "http://localhost:5173",
-    ],
+    ]
+    ,
     credentials: true,
   })
 );
