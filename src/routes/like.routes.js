@@ -12,7 +12,6 @@ const router = Router();
 
 router.use(verifyJWT);
 
-// http://localhost:3000/api/v1/like/...
 
 router.route("/").patch(toggleLike);
 router.route("/comment/:commentId").patch(toggleCommentLike);

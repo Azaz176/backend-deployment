@@ -14,7 +14,6 @@ import {
 
 const router = Router();
 
-// http://localhost:3000/api/v1/playlist/...
 
 router.route("/").post(verifyJWT, createPlaylist);
 router.route("/add/:playlistId/:videoId").patch(verifyJWT, addVideoToPlaylist);

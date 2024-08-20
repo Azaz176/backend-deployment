@@ -16,7 +16,6 @@ import { checkUser } from "../middlewares/openRouteAuth.middleware.js";
 
 const router = Router();
 
-// http://localhost:3000/api/v1/videos/...
 
 router.route("/all/option").get(getAllVideosByOption);
 

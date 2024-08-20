@@ -10,7 +10,6 @@ import {
 
 const router = Router();
 
-// http://localhost:3000/api/v1/comment/...
 
 router.route("/get/:videoId").get(checkUser, getVideoComments);
 router.route("/add/:videoId").post(verifyJWT, addComment);

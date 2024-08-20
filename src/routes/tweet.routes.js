@@ -13,7 +13,6 @@ import { checkUser } from "../middlewares/openRouteAuth.middleware.js";
 
 const router = Router();
 
-// http://localhost:3000/api/v1/tweets/...
 
 router.route("/feed").get(checkUser, getAllUserFeedTweets);
 router.route("/").get(checkUser, getAllTweets).post(verifyJWT, createTweet);

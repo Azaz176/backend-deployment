@@ -9,7 +9,6 @@ import {
 } from "../controllers/subscription.controller.js";
 const router = Router();
 
-// http://localhost:3000/api/v1/subscription/...
 
 router
   .route("/:channelId")
